@@ -6,6 +6,11 @@
         </Sanp_Crud>
     </modules>
     <global>
+        <helpers>
+            <sanp_crud>
+                <class>Sanp_Crud_Helper</class>
+            </sanp_crud>
+        </helpers>
         <models>
             <sanp_crud>
                 <class>Sanp_Crud_Model</class>
@@ -27,7 +32,21 @@
                 </setup>
             </sanp_crud_setup>
         </resources>
+        <blocks>
+            <sanp_crud>
+                <class>Sanp_Crud_Block</class>
+            </sanp_crud>
+        </blocks>
     </global>
+    <adminhtml>
+        <layout>
+            <updates>
+                <sanp_crud>
+                    <file>sanp_crud.xml</file>
+                </sanp_crud>
+            </updates>
+        </layout>
+    </adminhtml>
     <admin>
         <routers>
             <adminhtml>
