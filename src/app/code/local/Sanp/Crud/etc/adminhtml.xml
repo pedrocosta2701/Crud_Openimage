@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <sanp_crud module="sanp_crud">
+            <title>Definitions</title>
+            <sort_order>100</sort_order>
+            <children>
+                <items module="sanp_crud">
+                    <title>Manage Items</title>
+                    <action>adminhtml/item/index</action>
+                    <sort_order>0</sort_order>
+                </items>
+            </children>
+        </sanp_crud>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <sanp_crud>
+                        <title>Definitions</title>
+                        <children>
+                            <items>
+                                <title>Manage Items</title>
+                            </items>
+                        </children>
+                    </sanp_crud>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

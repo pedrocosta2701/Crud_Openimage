@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Sanp_Crud>
+            <version>1.0.0</version>
+        </Sanp_Crud>
+    </modules>
+    <global>
+        <models>
+            <sanp_crud>
+                <class>Sanp_Crud_Model</class>
+                <resourceModel>sanp_crud_resource</resourceModel>
+            </sanp_crud>
+            <sanp_crud_resource>
+                <class>Sanp_Crud_Model_Resource</class>
+                <entities>
+                    <item>
+                        <table>sanp_crud_item</table>
+                    </item>
+                </entities>
+            </sanp_crud_resource>
+        </models>
+        <resources>
+            <sanp_crud_setup>
+                <setup>
+                    <module>Sanp_Crud</module>
+                </setup>
+            </sanp_crud_setup>
+        </resources>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Sanp_Crud before="Mage_Adminhtml">Sanp_Crud_Adminhtml</Sanp_Crud>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

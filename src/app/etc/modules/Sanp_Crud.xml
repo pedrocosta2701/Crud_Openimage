@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Sanp_Crud>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Sanp_Crud>
+    </modules>
+</config>
